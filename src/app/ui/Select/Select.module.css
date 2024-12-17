@@ -1,0 +1,61 @@
+.select {
+  position: relative;
+  width: 200px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: 'Inter Tight', sans-serif;
+}
+
+.selected {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.selected:hover {
+  border-color: #888;
+}
+
+.arrow {
+  font-size: 0;
+}
+
+.arrow svg {
+  transition: transform 0.3s ease;
+  transform-origin: center;
+}
+
+.arrow.open svg {
+  transform: rotate(180deg);
+}
+
+.options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  list-style: none;
+  z-index: 1000;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.option {
+  padding: 6px 10px;
+  transition: background-color 0.2s ease;
+}
+
+.option:hover {
+  background-color: #f0f0f0;
+}

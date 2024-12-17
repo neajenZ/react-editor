@@ -1,0 +1,14 @@
+.body {
+  padding: 12px;
+  border-radius: 4px;
+  border: 2px solid greenyellow;
+  margin-top: 15px;
+}
+
+.body p {
+  font-family: 'Inter Tight', serif;
+}
+
+.error {
+  border-color: red !important;
+}
